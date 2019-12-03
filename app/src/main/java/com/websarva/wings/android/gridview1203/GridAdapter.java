@@ -69,8 +69,8 @@ public class GridAdapter extends BaseAdapter {
         Picasso.with(context)
                 .load(addUrl(position))
                 .resize(ScreenWHalf, ScreenWHalf)
-//                .placeholder(R.drawable.placeholder)
-//                .error(R.drawable.error)
+                .placeholder(R.drawable.placeholder)
+                .error(R.drawable.error)
                 .into(img);
 
         return view;
